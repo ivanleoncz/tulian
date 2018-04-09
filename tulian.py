@@ -6,40 +6,62 @@ __author__ = "@ivanleoncz"
 
 class Tulian:
 
-    def __init__(self,lst):
-        self.lst = lst
-    
 
-    def numbers(self):
-        """ Maps all numbers, using list comprehensions with filter. 
+    def numbers(self, data):
+        """ Maps all numbers, using list comprehensions.
+
+        Arg:
+            tuple or list
+
+        Returns:
+            list
+        """
+        return [n for n in data if type(n) == int]
+
+
+    def strings(self, data):
+        """ Maps all strings, using list comprehensions.
+
+        Arg:
+            tuple or list
+
+        Returns:
+            list
+        """
+        return [s for s in data if type(s) == str]
+
+
+    def dicts(self, data):
+        """ Maps all dicts, using list comprehensions.
+
+        Arg:
+            tuple or list
         
-        Returns a list. """
-        return [n for n in self.lst if type(n) == int]
+        Returns:
+            list
+        """
+        return [d for d in data if type(d) == dict]
 
 
-    def strings(self):
-        """ Maps all strings, using list comprehensions with filter. 
+    def tuples(self, data):
+        """ Maps all tuples, using list comprehensions.
+
+        Arg:
+            tuple or list
         
-        Returns a list. """
-        return [s for s in self.lst if type(s) == str]
+        Returns:
+            list
+        """
+        return [t for t in data if type(t) == tuple]
 
 
-    def dicts(self):
-        """ Maps all dicts, using list comprehensions with filter. 
+    def lists(self, data):
+        """ Maps all lists, using list comprehensions.
+
+        Arg:
+            tuple or list
         
-        Returns a list. """
-        return [d for d in self.lst if type(d) == dict]
-
-
-    def tuples(self):
-        """ Maps all tuples, using list comprehensions with filter. 
-        
-        Returns a list. """
-        return [t for t in self.lst if type(t) == tuple]
-
-
-    def lists(self):
-        """ Maps all lists, using list comprehensions with filter. 
-        
-        Returns a list. """
-        return [l for l in self.lst if type(l) == list]
+        Returns:
+            list
+        """
+        return [l for l in data if type(l) == list]
