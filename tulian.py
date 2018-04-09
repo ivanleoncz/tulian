@@ -36,3 +36,10 @@ class Tulian:
         
         Returns a list. """
         return [t for t in self.lst if type(t) == tuple]
+
+
+    def lists(self):
+        """ Maps all lists, using list comprehensions with filter. 
+        
+        Returns a list. """
+        return [l for l in self.lst if type(l) == list]
