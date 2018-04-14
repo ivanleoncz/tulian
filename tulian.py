@@ -24,6 +24,23 @@ class Tulian:
         return [n for n in data if type(n) == int]
 
 
+    def floats(self, data):
+        """
+        Maps Floating-point numbers.
+
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
+
+        Returns
+        -------
+        list : comprehension
+            Composed of Floating-point numbers.
+        """
+        return [f for f in data if type(f) == float]
+
+
     def strings(self, data):
         """
         Maps all strings.
