@@ -109,6 +109,39 @@ class Tulian:
         return [l for l in data if type(l) == list]
 
 
+    def sets(self, data):
+        """
+        Maps sets.
+
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
+
+        Returns
+        -------
+        list : comprehension
+            Composed of sets.
+        """
+        return [s for s in data if type(s) == set]
+
+
+    def frozen(self, data):
+        """
+        Maps frozen sets.
+
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
+
+        Returns
+        -------
+        list : comprehension
+            Composed of fronzen sets.
+        """
+
+
     def summary(self, data):
         """
         Summary of all information contained on data.
