@@ -7,9 +7,9 @@ __author__ = "@ivanleoncz"
 class Tulian:
 
 
-    def numbers(self, data):
+    def ints(self, data):
         """
-        Maps numbers.
+        Maps ints.
 
         Parameters
         ----------
@@ -107,6 +107,6 @@ class Tulian:
             Presents a summary of all information contained in data.
         """
         d = {}
-        d["int"] = len(self.numbers(data))
+        d["int"] = len(self.ints(data))
         d["str"] = len(self.strings(data))
         return d
