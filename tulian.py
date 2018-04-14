@@ -90,3 +90,23 @@ class Tulian:
             Composed of lists.
         """
         return [l for l in data if type(l) == list]
+
+
+    def summary(self, data):
+        """
+        Summary of all information contained on data.
+
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
+
+        Returns
+        -------
+        d : dictionary
+            Presents a summary of all information contained in data.
+        """
+        d = {}
+        d["int"] = len(self.numbers(data))
+        d["str"] = len(self.strings(data))
+        return d
