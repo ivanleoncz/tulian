@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Extracts data from tuples and lists. """
+""" Extracts data and insights from tuples and lists. """
 
 __author__ = "@ivanleoncz"
 
@@ -8,60 +8,85 @@ class Tulian:
 
 
     def numbers(self, data):
-        """ Maps all numbers, using list comprehensions.
+        """
+        Maps numbers.
 
-        Arg:
-            tuple or list
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
 
-        Returns:
-            list
+        Returns
+        -------
+        list : comprehension
+            Composed of integers.
         """
         return [n for n in data if type(n) == int]
 
 
     def strings(self, data):
-        """ Maps all strings, using list comprehensions.
+        """
+        Maps all strings.
 
-        Arg:
-            tuple or list
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
 
-        Returns:
-            list
+        Returns
+        -------
+        list : comprehension
+            Composed of strings.
         """
         return [s for s in data if type(s) == str]
 
 
     def dicts(self, data):
-        """ Maps all dicts, using list comprehensions.
+        """
+        Maps all dicts.
 
-        Arg:
-            tuple or list
-        
-        Returns:
-            list
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
+
+        Returns
+        -------
+        list : comprehension
+            Composed of strings.
         """
         return [d for d in data if type(d) == dict]
 
 
     def tuples(self, data):
-        """ Maps all tuples, using list comprehensions.
+        """
+        Maps all tuples.
 
-        Arg:
-            tuple or list
-        
-        Returns:
-            list
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
+
+        Returns
+        -------
+        list : comprehension
+            Composed of tuples.
         """
         return [t for t in data if type(t) == tuple]
 
 
     def lists(self, data):
-        """ Maps all lists, using list comprehensions.
+        """
+        Maps all lists.
 
-        Arg:
-            tuple or list
-        
-        Returns:
-            list
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
+
+        Returns
+        -------
+        list : comprehension
+            Composed of lists.
         """
         return [l for l in data if type(l) == list]
