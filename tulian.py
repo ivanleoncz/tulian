@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Extracts data and insights from tuples and lists. """
+""" Provides insights and filtered data from method parameter. """
 
 __author__ = "@ivanleoncz"
 
@@ -9,7 +9,7 @@ class Tulian:
 
     def ints(self, data):
         """
-        Maps ints.
+        Maps integers.
 
         Parameters
         ----------
@@ -43,7 +43,7 @@ class Tulian:
 
     def strings(self, data):
         """
-        Maps all strings.
+        Maps strings.
 
         Parameters
         ----------
@@ -60,7 +60,7 @@ class Tulian:
 
     def dicts(self, data):
         """
-        Maps all dicts.
+        Maps dicts.
 
         Parameters
         ----------
@@ -77,7 +77,7 @@ class Tulian:
 
     def tuples(self, data):
         """
-        Maps all tuples.
+        Maps tuples.
 
         Parameters
         ----------
@@ -94,7 +94,7 @@ class Tulian:
 
     def lists(self, data):
         """
-        Maps all lists.
+        Maps lists.
 
         Parameters
         ----------
