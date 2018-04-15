@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ Provides insights and filtered data from method parameter. """
 
+from json import loads, dumps
+
 __author__ = "@ivanleoncz"
 
 
@@ -157,6 +159,13 @@ class Tulian:
             Presents a summary of all information contained in data.
         """
         d = {}
-        d["int"] = len(self.ints(data))
-        d["str"] = len(self.strings(data))
-        return d
+        d["int"]        = len(self.ints(data))
+        d["float"]      = len(self.ints(data))
+        d["str"]        = len(self.strings(data))
+        d["dict"]       = len(self.dicts(data))
+        d["tuples"]     = len(self.tuples(data))
+        d["lists"]      = len(self.lists(data))
+        d["sets"]       = len(self.sets(data))
+        d["frozensets"] = len(self.frozen(data))
+        json_summary = loads(d)
+        return dumps(json_summary)
