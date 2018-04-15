@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Provides insights and filtered data from method parameter. """
 
-from json import loads, dumps
+from json import dumps
 
 __author__ = "@ivanleoncz"
 
@@ -168,5 +168,4 @@ class Tulian:
         d["lists"]      = len(self.lists(data))
         d["sets"]       = len(self.sets(data))
         d["frozensets"] = len(self.frozen(data))
-        json_summary = loads(d)
-        return dumps(json_summary)
+        return dumps(d, indent=4)
