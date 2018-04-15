@@ -142,6 +142,7 @@ class Tulian:
         list : comprehension
             Composed of fronzen sets.
         """
+        return [f for f in data if type(f) == frozenset]
 
 
     def summary(self, data):
