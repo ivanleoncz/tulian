@@ -43,6 +43,23 @@ class Tulian:
         return [f for f in data if type(f) == float]
 
 
+    def complex(self, data):
+        """
+        Maps complex numbers.
+
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
+
+        Returns
+        -------
+        list : comprehension
+            Composed of complex numbers.
+        """
+        return [c for c in data if type(c) == complex]
+
+
     def strings(self, data):
         """
         Maps strings.
