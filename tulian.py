@@ -168,4 +168,5 @@ class Tulian:
         d["lists"]      = len(self.lists(data))
         d["sets"]       = len(self.sets(data))
         d["frozensets"] = len(self.frozen(data))
-        return dumps(d, indent=4)
+        new_d = { k:v for (k,v) in d.items() if d[k] != 0}
+        return dumps(new_d, indent=4)
