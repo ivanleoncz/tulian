@@ -2,6 +2,6 @@
 Insights from Tuples and Lists.
 
 # Summary
-Provides filtered data and insights from Tuples and Lists, using List Comprehensions.
+Provides filtered data and insights from Tuples and Lists.
 
 
