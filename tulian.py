@@ -195,6 +195,8 @@ class Tulian:
         """
         d = {}
         d["int"]        = len(self.ints(data))
+        d["bytes"]      = len(self.bytes(data))
+        d["complex"]    = len(self.complex(data))
         d["float"]      = len(self.ints(data))
         d["str"]        = len(self.strings(data))
         d["dict"]       = len(self.dicts(data))
