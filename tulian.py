@@ -77,6 +77,23 @@ class Tulian:
         return [s for s in data if type(s) == str]
 
 
+    def bytes(self, data):
+        """
+        Maps byte strings.
+
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
+
+        Returns
+        -------
+        list : comprehension
+            Composed of byte strings.
+        """
+        return [b for b in data if type(b) == bytes]
+
+
     def dicts(self, data):
         """
         Maps dicts.
