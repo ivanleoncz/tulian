@@ -94,6 +94,23 @@ class Tulian:
         return [b for b in data if type(b) == bytes]
 
 
+    def bytearray(self, data):
+        """
+        Maps byte arrays.
+
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
+
+        Returns
+        -------
+        list : comprehension
+            Composed of byte arrays.
+        """
+        return [b for b in data if type(b) == bytearray]
+
+
     def dicts(self, data):
         """
         Maps dicts.
@@ -194,15 +211,16 @@ class Tulian:
             Presents a summary of all information contained in data.
         """
         d = {}
-        d["int"]        = len(self.ints(data))
-        d["bytes"]      = len(self.bytes(data))
-        d["complex"]    = len(self.complex(data))
-        d["float"]      = len(self.ints(data))
-        d["str"]        = len(self.strings(data))
-        d["dict"]       = len(self.dicts(data))
-        d["tuples"]     = len(self.tuples(data))
-        d["lists"]      = len(self.lists(data))
-        d["sets"]       = len(self.sets(data))
-        d["frozensets"] = len(self.frozen(data))
+        d["int"]         = len(self.ints(data))
+        d["bytes"]       = len(self.bytes(data))
+        d["byte arrays"] = len(self.bytearray(data))
+        d["complex"]     = len(self.complex(data))
+        d["float"]       = len(self.ints(data))
+        d["str"]         = len(self.strings(data))
+        d["dict"]        = len(self.dicts(data))
+        d["tuples"]      = len(self.tuples(data))
+        d["lists"]       = len(self.lists(data))
+        d["sets"]        = len(self.sets(data))
+        d["frozensets"]  = len(self.frozen(data))
         new_d = { k:v for (k,v) in d.items() if d[k] != 0}
         return dumps(new_d, indent=4)
