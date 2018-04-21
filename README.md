@@ -26,7 +26,7 @@ Counting data types:
 >>>
 ```
 
-Denerating a summary of how all present data types:
+Generating summary of all present data types (with counters):
 
 ```
 >>> print(data.summary(l))
