@@ -196,6 +196,23 @@ class Tulian:
         return [f for f in data if type(f) == frozenset]
 
 
+    def bool(self, data):
+        """
+        Maps booleans.
+
+        Parameters
+        ----------
+        data : tuple or list
+            Composed of multiple data types.
+
+        Returns
+        -------
+        list : comprehension
+            Composed of booleans.
+        """
+        return [b for b in data if type(b) == bool]
+
+
     def summary(self, data):
         """
         Summary of all information contained on data.
@@ -222,5 +239,6 @@ class Tulian:
         d["lists"]       = len(self.lists(data))
         d["sets"]        = len(self.sets(data))
         d["frozensets"]  = len(self.frozen(data))
+        d["booleans"]    = len(self.bool(data))
         new_d = { k:v for (k,v) in d.items() if d[k] != 0}
         return dumps(new_d, indent=4)
