@@ -60,7 +60,7 @@ class Tulian:
         return [c for c in data if type(c) == complex]
 
 
-    def strings(self, data):
+    def strs(self, data):
         """
         Maps strings.
 
@@ -233,7 +233,7 @@ class Tulian:
         d["byte arrays"] = len(self.bytearray(data))
         d["complex"]     = len(self.complex(data))
         d["float"]       = len(self.ints(data))
-        d["str"]         = len(self.strings(data))
+        d["str"]         = len(self.strs(data))
         d["dict"]        = len(self.dicts(data))
         d["tuples"]      = len(self.tuples(data))
         d["lists"]       = len(self.lists(data))
