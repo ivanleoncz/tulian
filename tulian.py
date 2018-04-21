@@ -196,7 +196,7 @@ class Tulian:
         return [f for f in data if type(f) == frozenset]
 
 
-    def bool(self, data):
+    def booleans(self, data):
         """
         Maps booleans.
 
@@ -239,6 +239,6 @@ class Tulian:
         d["lists"]       = len(self.lists(data))
         d["sets"]        = len(self.sets(data))
         d["frozensets"]  = len(self.frozen(data))
-        d["booleans"]    = len(self.bool(data))
+        d["booleans"]    = len(self.booleans(data))
         new_d = { k:v for (k,v) in d.items() if d[k] != 0}
         return dumps(new_d, indent=4)
