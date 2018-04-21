@@ -230,7 +230,7 @@ class Tulian:
         d = {}
         d["int"]         = len(self.ints(data))
         d["bytes"]       = len(self.bytes(data))
-        d["byte arrays"] = len(self.bytearray(data))
+        d["bytearrays"]  = len(self.bytearray(data))
         d["complex"]     = len(self.complex(data))
         d["float"]       = len(self.ints(data))
         d["str"]         = len(self.strs(data))
