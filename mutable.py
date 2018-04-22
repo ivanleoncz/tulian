@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 
 class Mutable:
     """ Separate class for treatment of mutable data types. """

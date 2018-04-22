@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 
 class Immutable:
     """ Separate class for treatment of immutable data types. """
