@@ -3,10 +3,12 @@
 
 from json import dumps
 
+from modules.mutable import Mutable
+
 __author__ = "@ivanleoncz"
 
 
-class Tulian:
+class Tulian(Mutable):
 
 
     def ints(self, data):
@@ -94,40 +96,6 @@ class Tulian:
         return [b for b in data if type(b) == bytes]
 
 
-    def bytearray(self, data):
-        """
-        Maps byte arrays.
-
-        Parameters
-        ----------
-        data : tuple or list
-            Composed of multiple data types.
-
-        Returns
-        -------
-        list : comprehension
-            Composed of byte arrays.
-        """
-        return [b for b in data if type(b) == bytearray]
-
-
-    def dicts(self, data):
-        """
-        Maps dicts.
-
-        Parameters
-        ----------
-        data : tuple or list
-            Composed of multiple data types.
-
-        Returns
-        -------
-        list : comprehension
-            Composed of strings.
-        """
-        return [d for d in data if type(d) == dict]
-
-
     def tuples(self, data):
         """
         Maps tuples.
@@ -143,40 +111,6 @@ class Tulian:
             Composed of tuples.
         """
         return [t for t in data if type(t) == tuple]
-
-
-    def lists(self, data):
-        """
-        Maps lists.
-
-        Parameters
-        ----------
-        data : tuple or list
-            Composed of multiple data types.
-
-        Returns
-        -------
-        list : comprehension
-            Composed of lists.
-        """
-        return [l for l in data if type(l) == list]
-
-
-    def sets(self, data):
-        """
-        Maps sets.
-
-        Parameters
-        ----------
-        data : tuple or list
-            Composed of multiple data types.
-
-        Returns
-        -------
-        list : comprehension
-            Composed of sets.
-        """
-        return [s for s in data if type(s) == set]
 
 
     def frozen(self, data):
