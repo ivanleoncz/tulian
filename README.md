@@ -2,7 +2,7 @@
 Insights from Tuples and Lists, using Comprehensions. 
 
 Tulian provides a summary (JSON) of data types present on such source 
-and provides the extraction of a specific data type, present as List.
+and provides the extraction of a specific data type, presented as List.
 
 ## Usage
 
