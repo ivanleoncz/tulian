@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
 
 class Immutable:
-    """ Separate class for treatment of immutable data types. """
-
+    """ Methods for the treatment of immutable datasets. """
 
     def ints(self, data):
         """
         Maps integers.
+
         Parameters
         ----------
         data : tuple or list
             Composed of multiple data types.
+
         Returns
         -------
         list : comprehension
@@ -22,10 +23,12 @@ class Immutable:
     def floats(self, data):
         """
         Maps Floating-point numbers.
+
         Parameters
         ----------
         data : tuple or list
             Composed of multiple data types.
+
         Returns
         -------
         list : comprehension
@@ -37,10 +40,12 @@ class Immutable:
     def complex(self, data):
         """
         Maps complex numbers.
+
         Parameters
         ----------
         data : tuple or list
             Composed of multiple data types.
+
         Returns
         -------
         list : comprehension
@@ -52,10 +57,12 @@ class Immutable:
     def strs(self, data):
         """
         Maps strings.
+
         Parameters
         ----------
         data : tuple or list
             Composed of multiple data types.
+
         Returns
         -------
         list : comprehension
@@ -67,10 +74,12 @@ class Immutable:
     def bytes(self, data):
         """
         Maps byte strings.
+
         Parameters
         ----------
         data : tuple or list
             Composed of multiple data types.
+
         Returns
         -------
         list : comprehension
@@ -82,10 +91,12 @@ class Immutable:
     def tuples(self, data):
         """
         Maps tuples.
+
         Parameters
         ----------
         data : tuple or list
             Composed of multiple data types.
+
         Returns
         -------
         list : comprehension
@@ -97,10 +108,12 @@ class Immutable:
     def frozens(self, data):
         """
         Maps frozen sets.
+
         Parameters
         ----------
         data : tuple or list
             Composed of multiple data types.
+
         Returns
         -------
         list : comprehension
@@ -112,10 +125,12 @@ class Immutable:
     def booleans(self, data):
         """
         Maps booleans.
+
         Parameters
         ----------
         data : tuple or list
             Composed of multiple data types.
+
         Returns
         -------
         list : comprehension
