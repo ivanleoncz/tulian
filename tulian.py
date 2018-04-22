@@ -6,8 +6,6 @@ from json import dumps
 from mutable import Mutable
 from immutable import Immutable
 
-__author__ = "@ivanleoncz"
-__version__ = "1.0"
 
 class Tulian(Mutable, Immutable):
 
