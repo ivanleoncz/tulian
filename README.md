@@ -1,10 +1,8 @@
 ## Tulian
 Insights from Tuples and Lists, using Comprehensions. 
 
-Tulian provides a summary (JSON) of data types present on such source 
-and provides the extraction of a specific data type, presented as List.
+Tulian provides a summary (JSON) of data types present on such source. 
 
-## Usage
 
 ```
 >>> from tulian import Tulian
@@ -13,11 +11,6 @@ and provides the extraction of a specific data type, presented as List.
 >>> 
 >>> l = ['Python', 'Node.js', 2018, 365, 3.14, 'Guido', ['GNU', 'Linux'], (10, 100, 1000, 10000), 1988]
 >>>
-```
-
-- Generating summary of all data types:
-
-```
 >>> print(data.summary(l))
 {
     "float": 3,
@@ -29,7 +22,7 @@ and provides the extraction of a specific data type, presented as List.
 
 ```
  
-- Extracting specific data types:
+It also provides the extraction/presentation of a specific data type.
 
 ```
 >>> data.ints(l)
@@ -38,4 +31,6 @@ and provides the extraction of a specific data type, presented as List.
 >>> data.strs(l)
 ['Python', 'Node.js', 'Guido']
 >>>
+>>> data.tuples(l)
+[(10, 100, 1000, 10000)]
 ```
