@@ -5,9 +5,9 @@ Tulian provides a summary (JSON) of data types present on such source.
 
 
 ```
->>> from tulian import Tulian
+>>> from tulian import main
 >>> 
->>> data = Tulian()
+>>> data = main.Tulian()
 >>> 
 >>> l = ['Python', 'Node.js', 2018, 365, 3.14, 'Guido', ['GNU', 'Linux'], (10, 100, 1000, 10000), 1988]
 >>>
