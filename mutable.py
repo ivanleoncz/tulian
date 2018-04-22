@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
 
 class Mutable:
-    """ Separate class for treatment of mutable data types. """
-
+    """ Methods for the treatment of mutable datasets. """
 
     def bytearrays(self, data):
         """
         Maps byte arrays.
+
         Parameters
         ----------
         data : tuple or list
             Composed of multiple data types.
+
         Returns
         -------
         list : comprehension
@@ -22,10 +23,12 @@ class Mutable:
     def lists(self, data):
         """
         Maps lists.
+
         Parameters
         ----------
         data : tuple or list
             Composed of multiple data types.
+
         Returns
         -------
         list : comprehension
@@ -37,10 +40,12 @@ class Mutable:
     def sets(self, data):
         """
         Maps sets.
+
         Parameters
         ----------
         data : tuple or list
             Composed of multiple data types.
+
         Returns
         -------
         list : comprehension
@@ -52,10 +57,12 @@ class Mutable:
     def dicts(self, data):
         """
         Maps dicts.
+
         Parameters
         ----------
         data : tuple or list
             Composed of multiple data types.
+
         Returns
         -------
         list : comprehension
