@@ -35,7 +35,7 @@ class Tulian(Mutable, Immutable):
         d["tuples"]      = len(self.tuples(data))
         d["lists"]       = len(self.lists(data))
         d["sets"]        = len(self.sets(data))
-        d["frozensets"]  = len(self.frozen(data))
+        d["frozensets"]  = len(self.frozens(data))
         d["booleans"]    = len(self.booleans(data))
         new_d = { k:v for (k,v) in d.items() if d[k] != 0}
         return dumps(new_d, indent=4)
