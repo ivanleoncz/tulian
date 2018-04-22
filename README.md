@@ -21,7 +21,7 @@ Counting data types:
 >>> data.ints(l)
 [2018, 365, 1988]
 >>>
->>> data.strings(l)
+>>> data.strs(l)
 ['Python', 'Node.js', 'Guido']
 >>>
 ```
