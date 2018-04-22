@@ -9,7 +9,6 @@ from .immutable import Immutable
 class Tulian(Mutable, Immutable):
     """ Provides methods for processing datasets (Tuples and Lists). """
 
-
     def summary(self, data):
         """
         Summary of all information contained in the dataset.
