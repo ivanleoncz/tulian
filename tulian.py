@@ -7,7 +7,7 @@ from modules.mutable import Mutable
 from modules.immutable import Immutable
 
 __author__ = "@ivanleoncz"
-
+__version__ = "1.0"
 
 class Tulian(Mutable, Immutable):
 
