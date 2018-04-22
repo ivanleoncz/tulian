@@ -3,8 +3,8 @@
 
 from json import dumps
 
-from mutable import Mutable
-from immutable import Immutable
+from .mutable import Mutable
+from .immutable import Immutable
 
 
 class Tulian(Mutable, Immutable):
@@ -27,7 +27,7 @@ class Tulian(Mutable, Immutable):
         d = {}
         d["int"]         = len(self.ints(data))
         d["bytes"]       = len(self.bytes(data))
-        d["bytearrays"]  = len(self.bytearray(data))
+        d["bytearrays"]  = len(self.bytearrays(data))
         d["complex"]     = len(self.complex(data))
         d["float"]       = len(self.ints(data))
         d["str"]         = len(self.strs(data))
