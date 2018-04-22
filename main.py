@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-""" Provides insights and filtered data from method parameter. """
 
 from json import dumps
 
@@ -8,11 +7,12 @@ from .immutable import Immutable
 
 
 class Tulian(Mutable, Immutable):
+    """ Provides methods for processing datasets (Tuples and Lists). """
 
 
     def summary(self, data):
         """
-        Summary of all information contained on data.
+        Summary of all information contained in the dataset.
 
         Parameters
         ----------
@@ -21,8 +21,7 @@ class Tulian(Mutable, Immutable):
 
         Returns
         -------
-        d : dictionary
-            Presents a summary of all information contained in data.
+        new_d : dict (as JSON)
         """
         d = {}
         d["int"]         = len(self.ints(data))
