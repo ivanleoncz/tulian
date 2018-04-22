@@ -14,19 +14,8 @@ Performs analysis of Tuples and Lists, using comprehensions.
 >>> l = ['Python', 'Node.js', 2018, 365, 3.14, 'Guido', ['GNU', 'Linux'], (10, 100, 1000, 10000), 1988]
 >>>
 ```
- 
-Counting data types:
 
-```
->>> data.ints(l)
-[2018, 365, 1988]
->>>
->>> data.strs(l)
-['Python', 'Node.js', 'Guido']
->>>
-```
-
-Generating summary of all present data types (with counters):
+Generating summary of all data types:
 
 ```
 >>> print(data.summary(l))
@@ -39,6 +28,18 @@ Generating summary of all present data types (with counters):
 }
 
 ```
+ 
+Extracting specific data types:
+
+```
+>>> data.ints(l)
+[2018, 365, 1988]
+>>>
+>>> data.strs(l)
+['Python', 'Node.js', 'Guido']
+>>>
+```
+
 
 
 
