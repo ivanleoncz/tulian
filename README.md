@@ -1,8 +1,8 @@
 ## Tulian
-Insights from Tuples and Lists.
+Insights from Tuples and Lists, using Comprehensions. 
 
-## Concept
-Performs analysis of Tuples and Lists, using comprehensions.
+Tulian provides a summary (JSON) of data types present on such source 
+and provides the extraction of a specific data type, present as List.
 
 ## Usage
 
@@ -15,7 +15,7 @@ Performs analysis of Tuples and Lists, using comprehensions.
 >>>
 ```
 
-Generating summary of all data types:
+- Generating summary of all data types:
 
 ```
 >>> print(data.summary(l))
@@ -29,7 +29,7 @@ Generating summary of all data types:
 
 ```
  
-Extracting specific data types:
+- Extracting specific data types:
 
 ```
 >>> data.ints(l)
@@ -39,7 +39,3 @@ Extracting specific data types:
 ['Python', 'Node.js', 'Guido']
 >>>
 ```
-
-
-
-
