@@ -3,8 +3,8 @@
 
 from json import dumps
 
-from modules.mutable import Mutable
-from modules.immutable import Immutable
+from mutable import Mutable
+from immutable import Immutable
 
 __author__ = "@ivanleoncz"
 __version__ = "1.0"
