@@ -1,7 +1,7 @@
 ## Tulian
 Insights from Tuples and Lists, using Comprehensions. 
 
-Tulian provides a summary (JSON) of data types present on such source. 
+Tulian provides a summary (JSON) of data types contained in a Tuple or in a List. 
 
 
 ```
