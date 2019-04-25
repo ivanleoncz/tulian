@@ -2,8 +2,8 @@
 
 from json import dumps
 
-from .mutable import Mutable
-from .immutable import Immutable
+from modules.mutable import Mutable
+from modules.immutable import Immutable
 
 
 class Tulian(Mutable, Immutable):
